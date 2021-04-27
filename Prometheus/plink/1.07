@@ -1,0 +1,12 @@
+#%Module1.0######################################################################
+##
+## dot modulefile
+##
+proc ModulesHelp { } {
+    puts stderr "\tThe plink1.07 Module\n"
+    puts stderr "\tThis module adds the plink1.07 directory to your path."
+}
+
+module-whatis   "adds `plink1.07' to your PATH environment variable"
+
+append-path     PATH            /usr/local/Bio/plink_v1.07/bin
