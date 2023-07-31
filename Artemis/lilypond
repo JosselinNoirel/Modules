@@ -1,0 +1,12 @@
+#%Module1.0######################################################################
+##
+## Lilypond modulefile
+##
+proc ModulesHelp { } {
+    puts stderr "\tThe Lilypond Module\n"
+    puts stderr "\tThis module enables Lilypond by adding its directory to the path."
+}
+
+module-whatis   "adds `lilypond 2.24' to your PATH environment variable"
+
+append-path     PATH            /usr/local/share/lilypond-2.24.1/bin
